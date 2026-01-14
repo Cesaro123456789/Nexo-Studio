@@ -1,13 +1,14 @@
 # Nexo Studio
 
-Maquetación de un proyecto web de práctica de desarrollo frontend, desarrollado con HTML5 y CSS3.
+Proyecto de maquetación de una landing page ficticia para una empresa de servicios digitales llamada "Nexo Studio". Este proyecto sirve como práctica de desarrollo frontend y para mostrar habilidades de HTML, CSS y diseño responsivo.
 
 ## 🛠 Tecnologías
 - HTML5
 - CSS3
+- JavaScript básico (para la integración con WhatsApp)
 
 ## 📌 Descripción
-Este proyecto presenta una estructura básica para practicar maquetación y estilos en un entorno web, priorizando la claridad y el uso correcto de etiquetas semánticas.
+La página presenta secciones de inicio, servicios y contacto, incluyendo un formulario que genera un mensaje predefinido de WhatsApp. Se enfoca en maquetación clara, uso de etiquetas semánticas y diseño adaptativo para distintos tamaños de pantalla.
 
 ## 🔗 Proyecto en línea
 (Aquí puedes agregar el enlace cuando lo tengas)
