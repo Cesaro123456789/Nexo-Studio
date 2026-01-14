@@ -11,4 +11,4 @@ Proyecto de maquetación de una landing page ficticia para una empresa de servic
 La página presenta secciones de inicio, servicios y contacto, incluyendo un formulario que genera un mensaje predefinido de WhatsApp. Se enfoca en maquetación clara, uso de etiquetas semánticas y diseño adaptativo para distintos tamaños de pantalla.
 
 ## 🔗 Proyecto en línea
-(Aquí puedes agregar el enlace cuando lo tengas)
+https://cesaro123456789.github.io/Nexo-Studio/
