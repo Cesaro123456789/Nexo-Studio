@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+        
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            
+          }
+          
+          html {
+            scroll-behavior: smooth;
+          }
+            
+     /*  ESTILOS DEL ENCABEZADO  */
+      
+          .header {
+            display: flex;
+            align-items: center;
+            background-color: #f4f7f8;
+            max-width: 100%;
+            height: 657px;
+            font-family: Montserrat;
+          }
+          
+          .header-container {
+            margin-left: 35px;
+          }
+          
+          .header__logo-frase {
+            margin-left: 14px;
+            font-size: 20px;
+            color: #3aa98a;
+          }
+          
+          .header-logo {
+            width: 230px;
+          }
+          
+          .header-container a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #3aa98a;
+            border-radius: 10px;
+            background-color: #3aa98a;
+            padding: 12px;
+            ;
+            width: 208px;
+            margin: 30px 10px;
+          }
+          
+  /* ESTILOS DE LA BARRA DE NAVEGACION */
+          
+          .navegation-var {
+            background-color: #333;
+            font-family: Montserrat;
+          }
+          
+          .navegation-var__list {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            padding: 20px;
+            justify-content: center;
+            gap: 20px;
+          }
+          
+          .navegation-var__list a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+          }
+          
+  /* ESTILOS DE LA SECCION DE INICIO */
+          
+          #section__star {
+            height: 716px;
+            background-color: #3aa98a;
+            color: #fff;
+            display: flex;
+            font-family: Montserrat;
+            
+            /*REGLAS DE ANIMACION*/
+            
+            animation: aparecer linear both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 40%;
+            
+          }
+          
+          .section__star-conteiner {
+            display: flex;
+            flex-direction: column;
+            max-width: 740px;
+            margin: auto;
+          }
+          
+          .section__star-conteiner h2 {
+            margin: 15px 20px;
+            text-align: center;
+          }
+          
+          .section__star-conteiner p {
+            margin: 15px 20px;
+            line-height: 27px;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+          }
+          
+          .section__star-conteiner img {
+            width: 350px;
+            margin: auto;
+          }
+          
+        /*   SECCION DE SERVICIOS   */
+          
+          #section__services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F4F7F8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-family: Montserrat;
+            
+            /*REGLAS DE ANIMACION*/
+            
+            animation: aparecer linear both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 40%;
+          }
+          
+          #section__services h2 {
+            padding-bottom: 10px;
+            color: #3aa98a;
+            font-family: Anton;
+            letter-spacing: 4px;
+          }
+          
+          .tarjet-services {
+            background-color: #3aa98a;
+            padding: 20px;
+            margin: 11.5px 0;
+            border-radius: 10px;
+            box-shadow: 5px 7px 5px #666;
+          }
+          
+          .tarjet-services h3 {
+            padding: 7px;
+          }
+          
+          .tarjet-services p {
+            padding: 10px;
+          }
+          
+      /*   SECCION DE CONTACTO   */
+        
+        #section__form {
+          height: 716px;
+          background-color: #3aa98a;
+          align-content: center;
+          
+          /*REGLAS DE ANIMACION*/
+            
+          animation: aparecer linear both;
+          animation-timeline: view();
+          animation-range: entry 10% cover 40%;
+        }
+        
+        .section__form-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          color: #3aa98a;
+          background-color: #f4f7f8;
+          margin: 0 30px;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 18px #555;
+        }
+        .section__form-container h2 {
+          font-size: 32px;
+          padding: 15px 25px;
+          font-family: Montserrat;
+        }
+        .section__form-container label {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 5px;
+          font-family: Montserrat;
+        }
+        .section__form-container input,
+         select  {
+          border-radius: 10px;
+          border: 2px solid #3aa98a;
+          background-color: #fff;
+          font-size: 16px;
+          padding: 12px 5px;
+          text-align: center;
+          outline: none;
+        }
+        .section__form-container button {
+          background-color: #fff;
+          border: 1px solid #3aa98a;
+          border-radius: 10px;
+          background-color: #3aa98a;
+          padding: 10px 45px;
+          color: #fff;
+          font-size: 18px;
+          margin: 20px;
+          font-weight: 500;
+        }
+        
+        /*      FOOTER      */
+        
+        .footer {
+          background-color: #333;
+          padding: 15px 0;
+          color: #fff;
+          font-weight: 500;
+          text-align: center;
+          font-family: Montserrat;
+        }
+        .footer p {
+          line-height: 25px;
+          margin: 20px;
+        }
+        
+        /* SECCION DE ANIMACIONES */
+          
+          @keyframes aparecer {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          
+         /* SECCION MEDIA QUERIES */
+          
+          @media (min-width: 768px) {
+            .section__star-conteiner img {
+              width: 550px;
+            }
+            
+            .section__star-conteiner h2 {
+              font-size: 30px;
+            }
+            
+            .section__star-conteiner p {
+              font-size: 22px;
+            }
+            
+            .header-logo {
+              width: 500px;
+            }
+            
+            .header__logo-frase {
+              font-size: 35px;
+              margin-left: 30px;
+            }
+            
+            .header-container a {
+              padding: 15px;
+              width: 300px;
+              font-size: 20px;
+              text-align: center;
+              margin-left: 25px;
+              margin-top: 70px;
+            }
+            .navegation-var__list {
+              align-items: center;
+              justify-content: space-between;
+              padding: 30px 90px;
+            }
+            .navegation-var__list a {
+              font-size: 30px;
+            }
+            #section__services h2 {
+              padding: 50px;
+              font-size: 40px;
+            }
+            .tarjet-services {
+              width: 450px;
+              padding: 50px;
+              margin-bottom: 20px;
+            }
+            .tarjet-services h3 {
+              font-size: 26px;
+            }
+            .tarjet-services p {
+              font-size: 20px;
+            }
+            .section__form-container {
+              width: 600px;
+              margin: auto;
+            }
+            .section__form-container input {
+              padding: 15px;
+              font-size: 20px;
+            }
+            .section__form-container label {
+              font-size: 20px;
+            }
+            .section__form-container button {
+              font-size: 20px;
+              padding: 15px 60px;
+            }
+          }
+          
+        </style>
+    </head>
+    <body>
+      
+    <!------BARRA DE NAVEGACION------>
+      
+        <nav class="navegation-var">
+          <ul class="navegation-var__list">
+            <li>
+              <a href="#section__star">CONOCENOS</a>
+            </li>
+            <li>
+              <a href="#section__services">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="#section__form">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+        
+    <!--------ENCABEZADO-------->
+        
+        <header class="header">
+          <div class="header-container">
+            <img class="header-logo"src="https://i.ibb.co/Kj925mr4/1768174655188.png" alt="Logo">
+            <h1 class="header__logo-frase">
+              Presencia digital simple<br> y profesional
+            </h1>
+            <a href="https://wa.me/584122818064?text=Hola,%20quiero%20contratar%20un%20servicio%20de%20diseño%20para%20mi%20marca." class="btn-whatsapp">
+             Obtén tu diseño ahora
+           </a>
+          </div>
+        </header>
+        
+     <!----SECCION DE INICIO----->
+        
+        <main id="section__star">
+          <section class="section__star-conteiner">
+            <h2>Diseño y presencia digital para marcas que quieren crecer</h2>
+            <p>En Nexo Studio ayudamos a emprendedores y pequeños negocios a crear una presencia digital clara,
+              moderna y profesional. Diseñamos páginas web y piezas visuales que transmiten confianza,
+              atraen clientes y hacen que tu marca se vea seria desde el primer contacto.</p>
+              <img src="https://i.ibb.co/gFr0pSVR/file-0000000091e071f5b9bb84ba587b3e1c.png">
+          </section>
+        </main>
+        
+     <!----SECCION DE SERVICIOS--->
+        
+     <section id="section__services">
+          
+          <h2>SERVICIOS</h2>
+          
+          <div class="tarjet-services">
+            <h3>Diseño Web Básico</h3>
+            <p>Creamos páginas web claras, modernas y adaptadas a móviles para que tu negocio se vea profesional desde el primer contacto.</p>
+          </div>
+          
+          <div class="tarjet-services">
+            <h3>Identidad Visual</h3>
+            <p>Diseñamos piezas visuales coherentes para que tu marca tenga una imagen clara y reconocible en todos sus canales.</p>
+          </div>
+          
+          <div class="tarjet-services">
+            <h3>Presencia Digital</h3>
+            <p>Te ayudamos a organizar y presentar tu marca en el entorno digital para generar confianza y atraer clientes.</p>
+          </div>
+          
+     </section>
+     
+     <!---- SECCION DE CONTACTO ---->
+     
+     <form id="section__form">
+       
+       <div class="section__form-container">
+         
+         <h2>CONTACTO</h2>
+         
+         <label for="Nombre">
+           NOMBRE Y APELLIDO
+         </label>
+         
+         <input id="Nombre" type="text" placeholder="Joe Doe" required>
+         <label for="negocio">
+           NOMBRE DE TU NEGOCIO / PROYECTO
+         </label>
+         <input id="negocio"type="text" placeholder="Negocio / Proyecto" required>
+         
+         <label>
+           SERVICIOS
+         </label>
+         <select required>
+           <option>
+             ¿ Que servicio necesitas ?
+           </option>
+           <option>
+             Diseño Web
+           </option>
+           <option>
+             Identidad Visual
+           </option>
+           <option>
+             Presencia Digital
+           </option>
+         </select>
+         
+         <button type="button">
+           Enviar
+         </button>
+       </div>
+     </form>
+     
+     <footer class="footer">
+       
+         <p>
+           © 2026 Nexo Studio<br> Todos los derechos reservados
+         </p>
+         
+     </footer>
+     
+     <script>
+document.querySelector('#section__form button').addEventListener('click', function() {
+    const nombre = document.querySelector('#Nombre').value.trim();
+    const negocio = document.querySelector('#negocio').value.trim();
+    const servicio = document.querySelector('select').value;
+
+    if (!nombre || !negocio || servicio === "¿ Que servicio necesitas ?") {
+        alert("Por favor completa todos los campos y selecciona un servicio");
+        return;
+    }
+
+    // Mensaje con emoji y salto de línea usando \n
+    const mensaje = `Hola 🖐, Mi Nombre es ${nombre}.\n\nMi Emprendimiento es ${negocio} y estoy interesado en el servicio de ${servicio}.`;
+
+    const url = `https://wa.me/584122818064?text=${encodeURIComponent(mensaje)}`;
+    
+    window.open(url, '_blank');
+});
+</script>
+    </body>
+</html>
