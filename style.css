@@ -1,0 +1,314 @@
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            
+          }
+          
+          html {
+            scroll-behavior: smooth;
+          }
+            
+     /*  ESTILOS DEL ENCABEZADO  */
+      
+          .header {
+            display: flex;
+            align-items: center;
+            background-color: #f4f7f8;
+            max-width: 100%;
+            height: 657px;
+            font-family: Montserrat;
+          }
+          
+          .header-container {
+            margin-left: 35px;
+          }
+          
+          .header__logo-frase {
+            margin-left: 14px;
+            font-size: 20px;
+            color: #3aa98a;
+          }
+          
+          .header-logo {
+            width: 230px;
+          }
+          
+          .header-container a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #3aa98a;
+            border-radius: 10px;
+            background-color: #3aa98a;
+            padding: 12px;
+            ;
+            width: 208px;
+            margin: 30px 10px;
+          }
+          
+  /* ESTILOS DE LA BARRA DE NAVEGACION */
+          
+          .navegation-var {
+            background-color: #333;
+            font-family: Montserrat;
+          }
+          
+          .navegation-var__list {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            padding: 20px;
+            justify-content: center;
+            gap: 20px;
+          }
+          
+          .navegation-var__list a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 15px;
+          }
+          
+  /* ESTILOS DE LA SECCION DE INICIO */
+          
+          #section__star {
+            height: 716px;
+            background-color: #3aa98a;
+            color: #fff;
+            display: flex;
+            font-family: Montserrat;
+            
+            /*REGLAS DE ANIMACION*/
+            
+            animation: aparecer linear both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 40%;
+            
+          }
+          
+          .section__star-conteiner {
+            display: flex;
+            flex-direction: column;
+            max-width: 740px;
+            margin: auto;
+          }
+          
+          .section__star-conteiner h2 {
+            margin: 15px 20px;
+            text-align: center;
+          }
+          
+          .section__star-conteiner p {
+            margin: 15px 20px;
+            line-height: 27px;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+          }
+          
+          .section__star-conteiner img {
+            width: 350px;
+            margin: auto;
+          }
+          
+        /*   SECCION DE SERVICIOS   */
+          
+          #section__services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #F4F7F8;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            font-family: Montserrat;
+            
+            /*REGLAS DE ANIMACION*/
+            
+            animation: aparecer linear both;
+            animation-timeline: view();
+            animation-range: entry 10% cover 40%;
+          }
+          
+          #section__services h2 {
+            padding-bottom: 10px;
+            color: #3aa98a;
+            font-family: Anton;
+            letter-spacing: 4px;
+          }
+          
+          .tarjet-services {
+            background-color: #3aa98a;
+            padding: 20px;
+            margin: 11.5px 0;
+            border-radius: 10px;
+            box-shadow: 5px 7px 5px #666;
+          }
+          
+          .tarjet-services h3 {
+            padding: 7px;
+          }
+          
+          .tarjet-services p {
+            padding: 10px;
+          }
+          
+      /*   SECCION DE CONTACTO   */
+        
+        #section__form {
+          height: 716px;
+          background-color: #3aa98a;
+          align-content: center;
+          
+          /*REGLAS DE ANIMACION*/
+            
+          animation: aparecer linear both;
+          animation-timeline: view();
+          animation-range: entry 10% cover 40%;
+        }
+        
+        .section__form-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+          color: #3aa98a;
+          background-color: #f4f7f8;
+          margin: 0 30px;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 18px #555;
+        }
+        .section__form-container h2 {
+          font-size: 32px;
+          padding: 15px 25px;
+          font-family: Montserrat;
+        }
+        .section__form-container label {
+          text-align: center;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 5px;
+          font-family: Montserrat;
+        }
+        .section__form-container input,
+         select  {
+          border-radius: 10px;
+          border: 2px solid #3aa98a;
+          background-color: #fff;
+          font-size: 16px;
+          padding: 12px 5px;
+          text-align: center;
+          outline: none;
+        }
+        .section__form-container button {
+          background-color: #fff;
+          border: 1px solid #3aa98a;
+          border-radius: 10px;
+          background-color: #3aa98a;
+          padding: 10px 45px;
+          color: #fff;
+          font-size: 18px;
+          margin: 20px;
+          font-weight: 500;
+        }
+        
+        /*      FOOTER      */
+        
+        .footer {
+          background-color: #333;
+          padding: 15px 0;
+          color: #fff;
+          font-weight: 500;
+          text-align: center;
+          font-family: Montserrat;
+        }
+        .footer p {
+          line-height: 25px;
+          margin: 20px;
+        }
+        
+        /* SECCION DE ANIMACIONES */
+          
+          @keyframes aparecer {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          
+         /* SECCION MEDIA QUERIES */
+          
+          @media (min-width: 768px) {
+            .section__star-conteiner img {
+              width: 550px;
+            }
+            
+            .section__star-conteiner h2 {
+              font-size: 30px;
+            }
+            
+            .section__star-conteiner p {
+              font-size: 22px;
+            }
+            
+            .header-logo {
+              width: 500px;
+            }
+            
+            .header__logo-frase {
+              font-size: 35px;
+              margin-left: 30px;
+            }
+            
+            .header-container a {
+              padding: 15px;
+              width: 300px;
+              font-size: 20px;
+              text-align: center;
+              margin-left: 25px;
+              margin-top: 70px;
+            }
+            .navegation-var__list {
+              align-items: center;
+              justify-content: space-between;
+              padding: 30px 90px;
+            }
+            .navegation-var__list a {
+              font-size: 30px;
+            }
+            #section__services h2 {
+              padding: 50px;
+              font-size: 40px;
+            }
+            .tarjet-services {
+              width: 450px;
+              padding: 50px;
+              margin-bottom: 20px;
+            }
+            .tarjet-services h3 {
+              font-size: 26px;
+            }
+            .tarjet-services p {
+              font-size: 20px;
+            }
+            .section__form-container {
+              width: 600px;
+              margin: auto;
+            }
+            .section__form-container input {
+              padding: 15px;
+              font-size: 20px;
+            }
+            .section__form-container label {
+              font-size: 20px;
+            }
+            .section__form-container button {
+              font-size: 20px;
+              padding: 15px 60px;
+            }
+          }
+          
